@@ -35,7 +35,7 @@ let emptyArr : [] = []
 // # object 
 let obj: {} = {}
 
-console.log(obj)
+// console.log(obj)
 
 let obj1:{name:string;age:number,isMarried:boolean} = {  // If we mention the property we have to give value of inside of object
     name : 'suresh',
@@ -44,3 +44,51 @@ let obj1:{name:string;age:number,isMarried:boolean} = {  // If we mention the pr
 }
 
 
+//# interface 
+
+interface Details{
+    name : string,
+    age : number,
+    isMarried : boolean,
+    getItem : ()=> void
+}
+
+let obj2 : Details = {
+    name :'pranav',
+    age : 21,
+    isMarried : true,
+    getItem(){
+        console.log(this.name)
+    }
+}
+
+console.log(obj2)
+
+interface manageMent{
+    departMent : string,
+    rollNo : number,
+    additionInfo? : string  // if we use ? that property is optional for including in object
+}
+
+let obj3 : manageMent ={
+    departMent : 'MERN Stack',
+    rollNo : 7,
+}
+
+
+type hotal = {
+    dish  : string | number,   // we can add multiple data type like this |.
+    totalNo? : number
+}
+
+let hotelTr : hotal = {
+    dish : 'meals',
+    totalNo : 5
+}
+
+let suresh : hotal ={
+    dish : 780,
+}
+
+
+let arr1 : (string | number)[] = ['suresh','pranav','srirag',0,7,8] // In array we can add multiple datatype like this
