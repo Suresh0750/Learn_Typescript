@@ -1,4 +1,4 @@
-
+let developer = 'MERN Stack'  // it's atomatically take that type is call intertypes
 let sample : string = 'Hari'
 
 sample = 'suresh' //# we can't assign number
@@ -145,7 +145,7 @@ funcThree(obj4,hotelTr)
 
 // difference of type and interface
 
-// In terface we can only use obj but type we can use variable and obj and array
+//* Interface we can only use obj but type we can use variable and obj and array
 
 
 type Status = string   
@@ -163,6 +163,7 @@ let keyArr : key = ['suresh','pranav','madhav','srirag', 'arun','hari']
 
 // console.log(keyArr)
 
+//# Union
 type paymentMethod = 'pending' | 'completed'| '' | 'Not yet'   // type we can mention what value should be present here
 
 
@@ -186,3 +187,5 @@ function multiple (num1 : number,num2:number): void{
 
 multiple(2,2)
 multiple(2,2)
+
+
